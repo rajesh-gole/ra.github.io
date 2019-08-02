@@ -1,0 +1,148 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background:url(img/11.jpg);
+	font-family: sans-serif;
+		background-repeat:no-repeat;
+	background-size:cover;
+	height: 122vh;
+	width: auto;
+	min-height: 100%;
+}
+.container
+{
+	width: 980px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container .box
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px 4px #fdaf3c;
+
+}
+
+.container .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img
+{
+	max-width: 100%;
+	height: 300px;
+	transition: transform .5s;
+}
+.container .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+.container .box .details
+{
+	position: absolute;
+	top: 130px;
+	left: 60px;
+	bottom: 130px;
+	right: 60px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details
+{
+	transform: scaleY(1);
+
+}
+.container .box .details .content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+
+}
+.container .box .details .content h2
+{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	
+}
+.content a:link {
+  text-decoration: none;
+}
+
+nav img
+{
+	width: 70px;
+	height: 70px;
+	padding: 2px 80px;
+}
+
+nav
+{
+	width: 100%;
+	height: 60px;
+	background: rgba(0, 0, 0, 0.8);
+	border-top: 0px solid rgba(255,255,255, .2);
+	border-bottom: 1px solid rgba(255,255,255, .2);
+	top: 0;
+}
+nav ul
+{
+	display: flex;
+	margin: 0;
+	padding: 0 100px;
+	float: right;
+}
+nav ul li
+{
+	list-style: none;
+}
+nav ul li a
+{
+	display: block;
+	color:#fff;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height:60px;
+
+}
+.hme 
+{
+	background: #f00;
+	color: yellow;
+}
+nav ul li a:hover
+{
+	background: #f00;
+	color: yellow;
+}
+.watermark
+{
+	position: fixed;
+	opacity: 0.5;
+	z-index: 99;
+	color: #de0f00;
+	bottom: 10px;
+	right: 10px;
+    font-weight: 900;
+}
+
