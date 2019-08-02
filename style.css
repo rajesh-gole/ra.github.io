@@ -2,9 +2,9 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background:url(img/11.jpg);
+	background:url(11.jpg);
 	font-family: sans-serif;
-		background-repeat:no-repeat;
+	background-repeat:no-repeat;
 	background-size:cover;
 	height: 122vh;
 	width: auto;
